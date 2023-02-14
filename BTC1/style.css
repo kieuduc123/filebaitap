@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    border-color: #1a1c28;
+}
+:root{
+    --primary: #de4b3e;
+    --secondary: #c74237;
+}
+.dropdown{
+    width: 100%;
+    max-width: 47.5rem;
+    margin: 5rem auto;
+    position: relative;
+}
+.dropdown_select{
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--primary);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.dropdown__list{
+    margin-top: 2.5rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.dropdown:hover .dropdown__list{
+   display: block;
+}
+.dropdown__list:before{
+    content: "";
+    height: 2.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transform: translateY(-100%);
+}
+.dropdown__item{
+    padding: 3rem;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition:  background-color 0.2s linear;
+    cursor: pointer;
+
+}
+.dropdown__item:first-child{
+    border-radius: 4px 4px 0 0;
+    position: relative;
+}
+.dropdown__item:first-child:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--primary);
+    transition:  border-color 0.2s linear;
+    transform: translateY(-100%);
+}
+.dropdown__item:first-child:hover:before{
+    border-bottom-color: var(--secondary);
+}
+.dropdown__item:last-child{
+    border-radius: 0 0 4px 4px;
+}
+.dropdown__item:hover{
+    background-color: var(--secondary);
+}
