@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 300px;
+    background-color: #ffa400;
+    color: black;
+    padding: 10px;
+    margin: 15px;
+    border: 4px;
+    text-align: center;
+}
+.box2{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50rem;
+}
+.box3{
+    white-space: nowrap;
+    max-width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: green;
+
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    object-position: bottom;
+    background: url(https://images.unsplash.com/photo-1648516083827-bf486d43ffef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80) no-repeat center right/ cover;
+}
+.images{
+    display: block;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  h1 {
+    animation: spin 2s linear infinite;
+  }
+  .boxtext{
+    width: 20rem;
+    height: 20rem;
+    background-image: linear-gradient();
+  }
+  
