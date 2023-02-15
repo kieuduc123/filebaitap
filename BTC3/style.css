@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  height: 2000px;
+  font-weight: normal;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* bt1  */
+.text-gradient{
+    display: inline-block;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to left, #FF4895, #FFD96A);
+}
+/* bt2  */
+.button{
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: 6px;
+    margin: 2rem;
+    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #50cfc6, #68ececac);
+    box-shadow: 0 0 10px 0 hwb(180 20% 55% / 0.286);
+}
+/* bt3  */
+.color__item{
+    width: 10rem;
+    height: 15rem;
+    border-radius: 2px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: background-image 0.25s linear;
+
+}
+.color__item:first-child{
+    background-color: #a23bf0;
+}
+.color__item:nth-child(2){
+    background-color: #50cfc6;
+}
+.color__item:nth-child(3){
+    background-color: #FFD96A;
+}
+.color__item:nth-last-child(2){
+    background-color: #530f1aae;
+}
+.color__item:last-child{
+    background-color: rgb(127, 206, 255);
+}
+.color__item:hover{
+   background-image: linear-gradient(to left, #FF4895, #FFD96A);
+}
+/* bt4 nang cao  */
+
+/* select phan tu dau  */
+div[data-link^="https"]{
+    color: #FF4895;
+}
+/* select phan tu cuoi  */
+div[data-link$=".com"]{
+    color: rgb(172, 18, 105);
+}
+/*  chon ra div co data-name co chua ti hello */
+div[data-name*="hello"]{
+    color: antiquewhite;
+}
+/*  chon input co text la email */
+input[type="email"]{
+   color: #50cfc6;
+}
+/* chon input co nam la fullname  */
+input[type="fullname"]{
+    color: #a23bf0;
+}
