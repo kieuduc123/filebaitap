@@ -1,6 +1,6 @@
-//Cách khai báo object 
+//Cách khai báo ct 
 //object literal
-const ọbjectLiteral = {};
+const objectLiteral = {};
 //object constructor
 const objectConstructor = new Object()
 
@@ -82,3 +82,110 @@ const newCar = Object.freeze(car);
 newCar.brand = "MEC";
 
 console.log(newCar);
+
+//Object.seal(object) -> cho phep chinh sua key va value nhung khong dc them  key value moi.
+
+const user = {
+    userName : "Kieu Trung Duc",
+    school : {
+      name: "Ton That Thuyet",
+      room:{
+        name:"IT",
+    },
+},
+}
+
+// const userName = Object.seal(user);
+ 
+// userName.userName = "Duc Front end";
+// userName.lastName = "Duc Back end";
+
+// console.log(userName);
+
+//[...array],{...object}
+//
+
+const newUser = {
+    ...user
+};
+
+newUser.userName = "Front end";
+
+console.log(user);
+console.log(newUser);
+
+//Object.assign sao chep 
+const newUser2 = Object.assign({},user);
+console.log(newUser2);
+
+//clone nested object
+
+const newUser3 = JSON.parse(JSON.stringify(user));
+newUser3.school.name = "Designer"
+console.log("New User3");
+
+console.log(newUser3);
+
+//this keyword
+//this nó sẽ đề cập tới phương thức gần nhất .
+const student2 = {
+    name : "Duc",
+    age : 27,
+    male : true,
+    "last-name" : "DUC",
+    hi: function(){
+        console.log(`My name is ${this.name} and i am ${this.age} years old`);
+    },
+    fullName :{
+        name : "Hello"
+
+    }
+};
+student2.hi();
+
+//option chaining
+
+console.log(student.fullName); //undefined
+
+if (student2.fullName){
+    if(student2.fullName.name){
+        console.log(student2.fullName.name)
+    }
+}
+//cach rut gon  su dung option chaining
+console.log(student2.fullName?.name);
+
+//destructuring object 
+const{name,age,male,...rest} =student2;
+console.log(rest);
+// const name = student2.name;
+// const age = student2.age;
+// const male = student2.male;
+
+// function whatYourInfo (name,age,school){
+//     console.log(name,age,school);
+// }
+// whatYourInfo("DUC",22,"FPT");
+// whatYourInfo(22,"duc","FPT");
+
+//function with object paremeter
+function whatYourInfo (obj){
+    console.log(obj.name,obj.age,obj.school);
+}
+const newObj = {
+    school: "FPT",
+    age: 22,
+    name: "Duc"
+}
+
+whatYourInfo(newObj);
+//object  destructuring paremeter
+
+function whatYourInfo ({name,age,school}){
+    console.log(name,age,school);
+}
+whatYourInfo({
+    school : "FPT",
+    age: 28,
+    name:"DUC",
+});
