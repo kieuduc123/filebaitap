@@ -57,7 +57,7 @@ fizzBuzz(9);
 
 function conuntVowels (str){
     let conunt = 0;
-    const characters = "ueoai";
+    const characters = "euoai";
     for( let c of str){
         if (characters.includes(c))
         conunt = conunt + 1;

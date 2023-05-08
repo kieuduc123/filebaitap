@@ -42,3 +42,43 @@ for (let key in student){
     console.log(`${key}${student[key]}`);
 }
 
+//object.keys() -> tra ve 1 magn chua tat ca cac key cua object
+
+const object = Object.keys(student);
+console.log(object);
+
+//Object.values() -> tra ve mang chua tat ca cac values object;
+
+const values = Object.values(student);
+console.log(values);
+
+//Object.entries(object) -> tra ve 1 mang nested [co key va value] vi du ["name","duc" ]
+
+const entries = Object.entries(student);
+console.log(entries);
+
+//Object.assign() // copy value 
+
+const a = {
+    firsName : "Duc"
+}
+const b = {
+    lastName: "Kieu"
+};
+
+const c = Object.assign(a,b);
+
+console.log(c);
+const d = {...a,...b};
+//..
+//Object.freeze(object) -> ngan chan chỉnh sửa key và value trong object
+
+const car = {
+    brand: "BMW",
+};
+
+const newCar = Object.freeze(car);
+
+newCar.brand = "MEC";
+
+console.log(newCar);
