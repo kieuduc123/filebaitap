@@ -38,7 +38,7 @@ reverseNumber(-1234);
  
 function fizzBuzz(number){
     for (let i = 1; i <= number; i++){
-        if(i % 2 ===0 & i % 3 === 0){
+        if(i % 2 === 0 & i % 3 === 0){
             console.log("FizzBuzz")
             
         }
