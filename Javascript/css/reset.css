@@ -57,10 +57,91 @@ body{
 .botton{
     padding: 2rem;
     color: white;
-    background-color: #ffa400;
+    background-color: #4f3a40;
     margin: 50px auto;
     width: 300px;
     border: 0;
     display: block;
     cursor: pointer;
+}
+
+.change {
+    display: block;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    margin: 50px auto;
+    background-color: #3d6ef7;
+
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.counter-descrease{
+    font-size: 1.9rem;
+    border-radius: 10px;
+}
+.counter-number{
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 3rem;
+}
+.counter-increease{
+    font-size: 1.9rem;
+    border-radius: 10px;
+}
+
+/* tab */
+.tab{
+    width: 500px;
+    margin: 50px auto;
+     /* background-color: #f4f5f7; */
+} 
+.tab-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.tab-item{
+    cursor: pointer;
+    padding: 1.2rem 2rem;
+    border-radius: 5rem;
+    color: #818e9b;
+    background-color: #f4f5f7;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+    flex: 1;
+}
+.tab-item.active{
+    color: white;
+    background-color: #2979ff;
+    pointer-events: none;
+}
+.tab-item:not(:first-child){
+    margin-left: 1.5rem;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+.post{
+    display: flex;
+    align-items: center;
+}
+.post:not(:first-child){
+    margin-bottom: 2rem;
+}
+.post-title{
+    color: #514e4f;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 14px;
 }
