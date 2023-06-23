@@ -25,6 +25,8 @@ console.log(span.firstElementChild);
 console.log(span.lastElementChild);
 console.log(span.lastElementChild);
 
+
 console.log(span.nextSibling);
+
 console.log(span.previousSibling);
 

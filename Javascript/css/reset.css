@@ -145,3 +145,141 @@ body{
     line-height: 1.8;
     font-size: 14px;
 }
+
+/* bt3 */
+.accordion {
+    margin-bottom: 3rem;
+    min-width: 500px;
+}
+.accordion-header{
+    padding: 2rem;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-header *{
+    pointer-events: none;
+}
+.accordion-content{
+    border: 1px solid #eee;
+    border-top: 0;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.25s linear;
+
+}
+.accordion-content-inner {
+    padding: 2rem;
+    border: 1px solid #eee;
+}
+.accordion-content.is-active{
+    height: auto;
+}
+/* bt4 */
+.button{
+    display: block;
+    width: 150px;
+    border: 0;
+    background-color: #07a787;
+    color: white;
+    padding: 1.5rem;
+    margin: 15px auto;
+
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+  }
+  .modal-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .modal-content {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 10;
+    padding: 30px;
+    cursor: auto;
+  }
+  .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    color: white;
+    background-color: #eee;
+    padding: 5px;
+    transform: translate(50%, -50%);
+  }
+  .modal-main {
+    overscroll-behavior-y: contain;
+  }
+ 
+/* bt5 */
+.content{
+    max-width: 1024px;
+    padding: 50px 25px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 auto;
+}
+img{
+    cursor: zoom-in;
+}
+.content p{
+    margin-bottom: 30px;
+}
+.content img{
+    display: block;
+    margin-bottom: 30px;
+}
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: rgba(0,0,0,0.75);
+    align-items: center;
+}
+.lightbox-content{
+    min-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    padding:  0 25px;
+    justify-content: space-between;
+}
+.lightbox-content i{
+    color: white;
+    font-size: 3rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.lightbox-img{
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
