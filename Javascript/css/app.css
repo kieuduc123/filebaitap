@@ -7,7 +7,7 @@ ul, li a {
     list-style: none;
     text-decoration: none;
 }
-.menu{
+/* .menu{
     width: 300px;
     position: fixed;
     top: 0;
@@ -113,3 +113,126 @@ ul, li a {
     background-color: #3D6EF7;
     color: white;
 } */
+/* 
+.text{
+    text-transform: uppercase;
+    color:  #3D6EF7;
+    display: block;
+    font-size: 20px;
+    margin: 150px auto;
+    width: max-content;
+}
+.tooltip{
+    position: relative;
+}
+.tooltip-text{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: #3D6EF7;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    display: block;
+    color: wheat;
+    border-radius: 2rem;
+}
+tooltip-text:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,100%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid  #3D6EF7;
+
+}
+.menu{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.menu-item {
+    margin:  0 25px;
+    
+}
+.menu-link{
+    display: inline-block;
+    color: black;
+    position: relative;
+}
+.line{
+    height: 2px;
+    width: 0;
+    background-color: #3D6EF7;
+}
+.image-wrapper{
+    height: 300px;
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image{
+    object-fit: contain;
+    max-height: 100%;
+    cursor: zoom-in;
+    max-width: unset;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%,-50%);
+}
+ */ 
+
+ .todo{
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 600px;
+ }
+ .todo-from{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+ .todo-input{
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+ }
+ .todo-submit{
+    flex-shrink: 0;
+    padding: 15px;
+    border: 0;
+    color: wheat;
+    border-radius: 10px;
+ }
+ .todo-item{
+    margin-top: 15px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+ }
+.todo-text{
+    display: inline-block;
+    flex: 1;
+    overflow: hidden;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #333;
+}
+.todo-remove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 195);
+    flex-shrink: 0;
+}

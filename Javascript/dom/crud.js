@@ -1,8 +1,8 @@
 //them sua xoa
-1. //tao ra element trong javascript :  document.createElement("tag");
+1. //tao ra element trong javascript :  document.createElement("tag");UZCX  ư1`a    Zsa     
 const div = document.createElement("div");
 
-//2 selector .appendChild 
+//2 selector .appendChild  
 //document.body -> the body in ra 
 //document.querySelector("body"); 
 const body = document.body;

@@ -1,0 +1,132 @@
+/* form  */
+.input{
+    padding: 15px;
+    border-radius: 1px solid #eee;
+    width: 300px;
+    margin: 50px auto;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-login {
+    position: relative;
+    width: 500px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.form-login .toggle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
+    cursor: pointer;
+}
+.form-login input{
+    padding: 2rem;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    /* margin-bottom: 50px ; */
+    display: block;
+}
+/* .form-login button{
+    padding: 15px;
+    display: block;
+    color: white;
+    background-color: #2979ff;
+    font-size: 18px;
+    width: 100%;
+    border: 0;
+} */
+/* .dropdown {
+   position: relative;
+   width: 500px;
+   padding: 20px;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   margin: 20px auto;
+}
+.input-search{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1;
+    border: 1px solid #eee;
+    color: #333;
+}
+.dropdown-item{
+    margin-top: 20px;
+    font-weight: 3400;
+}
+.primary{
+    background-color: aqua;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    overflow: auto;
+}
+.box-contnet{
+    height: 600px;
+    width: 600px;
+} */
+
+.header{
+    background-color: white;
+    padding: 25px;
+}
+.header.is-show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    animation: fade 0.25s forwards 1;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
+    no-repeat center /cover;
+}
+.content{
+    height: 200vh;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-item{
+    
+}
+.menu-link {
+    cursor: pointer;
+    transform: all 0.2s;
+    text-decoration: none;
+    color:  red;
+    font-size: 17px;
+}
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #ff6bcb;
+}
+
